@@ -1,282 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+
+<title>SARS & MERS : BE4 YOU EXIT</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
+html,body,h1,h2,h3,h4,h5,h6 {font-family: athiti}
+
+/* Full height image header */
+.background-image {
+  background-image: url(logo.jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: skyblue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+h1 {text-align: center}
+img {width: 100; height: 100 ; padding-left: 100px}
 </style>
+
 <body>
+<!-- Navbar (sit on top) -->
+<ul>
+  <li style="font-family: calibri"><a href="index.html">Back</a></li>
+  <li style="font-family: calibri"><a href="Wabah.html">Wabah</a></li>
+  <li style="font-family: calibri"><a href="Penyebaran.html">Penyebaran</a></li>
+  <li style="font-family: calibri"><a href="Index-Pencegahan dan Pengobatan SARS & MERS.html">Pencegahan</a></li>
+  <li style="font-family: calibri"><a href="Penulis.html">Penulis</a></li>
+  <li style="font-family: calibri"><a href="Hubungi.html">Hubungi</a></li>
+ 
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+</ul>
+<header class="background-image display w3-container">
+  <div class="w3-container" style="margin-left: 60px; padding-top: 50px; padding-bottom: 20px;">
+  <span class="w3-jumbo" style="color: black; text-align: center;">SARS DAN MERS</span><br>
+  <span class="w3-xxlarge" style="color: black; text-align: center;"> XI-7 </span><br>
   </div>
-</div>
+  <br>
+  <img src="logo.jpg" ; alt="logo" ; class="center" ; width="700" ; height="700">
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
+<body>
+</header>
+  <div class="w3-row" style="margin-left: 50px; margin-right: 200px;margin-top: 20px">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
+      <h1 class="w3-text-teal">SARS </h1>
+      <p style="text-align: justify;">SARS disebabkan oleh salah satu jenis coronavirus yang dikenal dengan SARS-associated coronavirus (SARS-CoV). Coronavirus merupakan kelompok virus yang bisa menginfeksi saluran pernapasan. Saat terinfeksi virus ini, biasanya akan terjadi gangguan pernapasan mulai dari ringan sampai berat. Para ahli menduga bahwa virus penyebab SARS berasal dari kelelawar dan luwak. Virus ini kemudian bermutasi menjadi virus baru yang bisa menular dari hewan ke manusia dan dari manusia ke manusia Virus SARS dapat menginfeksi manusia melalui berbagai cara, antara lain: Tidak sengaja menghirup percikan ludah penderita SARS yang batuk atau bersin Menyentuh mulut, mata, atau hidung dengan tangan yang sudah terpapar percikan ludah penderita SARS Berbagi penggunaan alat makan dan minum dengan penderita SARS Seseorang juga dapat tertular SARS ketika menyentuh barang yang terkontaminasi oleh tinja penderita SARS. Penularan ini terjadi bila penderita tidak mencuci tangan dengan bersih setelah buang air besar. SARS lebih berisiko terjadi pada seseorang yang kontak jarak dekat dengan penderita, misalnya berada di wilayah yang mengalami wabah SARS, tinggal satu rumah dengan penderita SARS, atau petugas kesehatan yang merawat penderita SARS.</p>
 
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
+      <h1 class="w3-text-teal">MERS</h1>
+    <p style="text-align: justify;">MERS (Middle East Respiratory Syndrome) adalah penyakit yang menyerang pernapasan yang terjadi akibat virus Corona yang menyerang saluran pernapasan mulai dari yang ringan sampai berat.Penyebab MERS adalah betacoronavirus yang baru ditemukan. Coronavirus adalah virus terbesar dari semua jenis virus RNA. Kemungkinan mekanisme transmisi spesifik penyakit ini adalah antara manusia dan hewan sumber yang belum diketahui dan dapat terjadi penularan dari manusia ke manusia.</p>
 
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+
     </div>
   </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
+      <a class="w3-button" href="#" style="color: skyblue">1</a>
+      <a class="w3-button" href="#" style="color: skyblue">2</a>
+      <a class="w3-button" href="#" style="color: skyblue">3</a>
+      <a class="w3-button" href="#" style="color: skyblue">4</a>
+      <a class="w3-button" href="#" style="color: skyblue">5</a>
+      <a class="w3-button" href="#" style="color: skyblue">»</a>
     </div>
   </div>
 
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
+      <h4>dibuat oleh...</h4>
     </div>
 
     <div class="w3-container w3-theme-l1">
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   </footer>
-
-<!-- END MAIN -->
 </div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="index-gejala.html" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
-  </div>
-</div>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
-  </div>
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
 
 </body>
 </html>
